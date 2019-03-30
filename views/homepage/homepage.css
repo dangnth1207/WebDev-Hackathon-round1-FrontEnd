@@ -1,0 +1,209 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.cards {
+  width: 90%;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top {
+  position: relative;
+  background: url(http://bdb.bertsozale.eus/images/grid-loading.gif) #d2d2d2;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  display: block;
+}
+
+.bottom {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.card-col-1,
+.card-col-2,
+.card-col-3 {
+  width: calc(33.3333333% - 12px);
+  margin: 0 6px;
+  float: left;
+}
+
+.card h2 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #888;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.set-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.title {
+  color: #dd4814;
+  display: -webkit-box;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.5em;
+  white-space: pre-line;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #dd4814;
+}
+.checked {
+  color: orange;
+}
+.rating {
+  margin-bottom: 10px;
+}
+.cards-mansory {
+  column-count: 3;
+  column-gap: 1em;
+}
+@media only screen and (max-width: 1125px) {
+  .cards-mansory {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) {
+  .cards-mansory {
+    column-count: 1;
+  }
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+.main-bar {
+  padding: 1em;
+  width: 70%;
+  break-inside: avoid;
+}
+.side-bar {
+  padding: 1em;
+  width: 30%;
+}
+.masonry-layout__panel-content {
+  break-inside: avoid;
+}
+.button-enroll{
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  color: #dd4814;
+  background: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.button-enroll:hover{
+  background-color:#F7D488;
+}
+/*section*/
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700';
+body {
+  background: #eee;
+}
+#leaderboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.Leaderboard {
+  font-family: 'Roboto Mono', monospace;
+  width: 400px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .2);
+}
+.Leaderboard .Title {
+  padding: 20px;
+  background: #dd4814;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+.Leaderboard ul {
+  padding: 20px;
+}
+.Leaderboard .Person {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 10px;
+}
+.Leaderboard .Person:first-child {
+  margin-bottom: 15px;
+}
+.Leaderboard .Person:first-child .Image {
+  transform: scale(1.15);
+}
+.Leaderboard .Person:last-child {
+  margin-bottom: 0;
+}
+.Leaderboard .Person .Image {
+  height: 44px;
+  width: 44px;
+  background: orange;
+  border-radius: 44px;
+  transform: scale(0.9);
+}
+.Leaderboard .Person .Name {
+  margin-left: 10px;
+}
+.Leaderboard .Person .Score {
+  margin-left: auto;
+  font-weight: 700;
+}

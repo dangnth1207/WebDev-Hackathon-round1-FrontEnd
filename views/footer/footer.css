@@ -1,0 +1,27 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+footer {
+    background-color: rgb(250, 250, 250);
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
+.footer {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    color: rgb(155, 155, 155);
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;   
+}
+.footer-item{
+    padding: 0px 8px;
+}

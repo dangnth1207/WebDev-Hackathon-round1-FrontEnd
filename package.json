@@ -1,0 +1,25 @@
+{
+  "name": "2019-hackathon-uit-quiz-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DucMon/2019-Hackathon-UIT-Quiz-Web-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DucMon/2019-Hackathon-UIT-Quiz-Web-App/issues"
+  },
+  "homepage": "https://github.com/DucMon/2019-Hackathon-UIT-Quiz-Web-App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  }
+}

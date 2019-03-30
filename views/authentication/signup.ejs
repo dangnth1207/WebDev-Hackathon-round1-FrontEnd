@@ -1,0 +1,62 @@
+
+  <body>
+    <i class="fas fa-lock"></i>
+    <div class="login-box">
+      <h1>Register</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" />
+      </div>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input
+          type="password"
+          required
+          name="login[password]"
+          placeholder="Password"
+        />
+        <div class="hide-show">
+          <i></i>
+        </div>
+      </div>
+      <div class="textbox">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <input type="button" class="btn" value="Sign up" />
+      <div class="choice-box">You have account already?
+          <a href="./signin">Login now</a>
+      </div>
+    </div>
+  </div>
+    <script>
+      $(function() {
+        $(".hide-show").show();
+        $(".hide-show i").addClass("fas fa-eye");
+
+        $(".hide-show i").click(function() {
+          if ($(this).hasClass("fas fa-eye")) {
+            $(this).addClass("far fa-eye-slash");
+            $('input[name="login[password]"]').attr("type", "text");
+            $(this).removeClass("fas fa-eye");
+          } else {
+            $(this).addClass("fas fa-eye");
+            $('input[name="login[password]"]').attr("type", "password");
+            $(this).removeClass("fa-eye-slash");
+          }
+        });
+
+        $('form button[type="submit"]').on("click", function() {
+          $(".hide-show i")
+            .text("Show")
+            .addClass("show");
+          $(".hide-show")
+            .parent()
+            .find('input[name="login[password]"]')
+            .attr("type", "password");
+        });
+      });
+    </script>
+  </body>
